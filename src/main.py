@@ -2,7 +2,6 @@ import argparse
 import csv
 import response
 import urllib3 as urllib3
-
 from locate_coffee_shop import locate_closest_coffee_shops
 
 
