@@ -19,18 +19,20 @@ class TestLocateCoffeeShop(unittest.TestCase):
 
     def test_locate_coffee_shop_fail(self):
         user_location = [0, 0]
-        coffee_shops = [['Loc 1', '1', '1'],
-                        ['Loc 2', '2', '2'],
-                        ['Loc 3', '3', 'cartof'],
-                        ['Loc 4', '4'],
+        coffee_shops = [['Loc 1', 1, 1],
+                        ['Loc 2', 2, 2],
+                        ['Loc 3', '3', 'string'],
+                        ['Loc 4', 4],
                         [],
-                        ['Loc 5', '5', '5']]
+                        ['Loc 5', 5, 5]]
         expected_response = [ProximateCoffeeShop(name='Loc 1', distance=1.4142),
                              ProximateCoffeeShop(name='Loc 2', distance=2.8284),
                              ProximateCoffeeShop(name='Loc 5', distance=7.0711)]
-        expected_issues = ["Issue at row number 3: could not convert string to float: 'cartof' ",
-                           'Issue at row number 4: not enough values to unpack (expected 3, got 2) ',
-                           'Issue at row number 5: not enough values to unpack (expected 3, got 0) ']
+        '''Expected issues: - Could not convert string to float: 'string' ,
+                            - Not enough values to unpack (expected 3, got 2) ,
+                            - Not enough values to unpack (expected 3, got 0) ,
+                            - Input file does not exist or provided url is not correct ,
+        '''
         self.assertEqual(locate_closest_coffee_shops(user_location[0], user_location[1], coffee_shops), expected_response)
 
 if __name__ == '__main__':
