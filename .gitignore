@@ -1,2 +1,4 @@
 # Ignore idea files
-.idea
+.idea/
+# Ignore vens files
+.venv/
