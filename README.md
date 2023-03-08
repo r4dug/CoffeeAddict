@@ -1,5 +1,10 @@
 # FreakCoffeeAddict
 
+## How to run:
+You can run the project by using the following command:
+1) cd src
+2) python3 main.py 'X' 'Y' https://raw.githubusercontent.com/Agilefreaks/test_oop/master/coffee_shops.csv
+
 ## Overview
 
 You have been hired by a company that builds a app for coffee addicts.  You are 
