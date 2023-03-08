@@ -4,7 +4,7 @@ from src.locate_coffee_shop import ProximateCoffeeShop, locate_closest_coffee_sh
 
 class TestLocateCoffeeShop(unittest.TestCase):
 
-    # test the existence of the file path
+    # test with a wrong file path
     def test_locate_coffee_shop_no_file(self):
         file_path = 'fake_file.csv'
         user_x = 47.5809
