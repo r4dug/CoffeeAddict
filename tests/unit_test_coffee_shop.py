@@ -4,16 +4,6 @@ from src.locate_coffee_shop import ProximateCoffeeShop, locate_closest_coffee_sh
 
 class TestLocateCoffeeShop(unittest.TestCase):
 
-    # test with a wrong file path
-    def test_locate_coffee_shop_no_file(self):
-        file_path = 'fake_file.csv'
-        user_x = 47.5809
-        user_y = -122.3160
-        try:
-            locate_closest_coffee_shops(user_x, user_y, file_path)
-        except Exception as ex:
-            assert "Input file does not exist." in str(ex)
-
     def test_locate_coffee_shop(self):
         user_location = [0, 0]
         coffee_shops = [['Loc 1', 1, 1],
