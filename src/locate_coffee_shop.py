@@ -20,7 +20,7 @@ def locate_closest_coffee_shops(user_location, coffee_shops):
             shop_distance = round(distance.euclidean(user_location, [x, y]), 4)
             shops.append(ProximateCoffeeShop(shop_name, shop_distance))
         except ValueError as err:
-            print(f"Execution stopped. The following error occurred: {err} at row {row}")
+            print(f"Execution stopped. The following error occurred: {err} at row {row}.")
     # sort the coffee shops by distance
     sorted_shops = sorted(shops, key=lambda asc: asc.distance)
     return sorted_shops[:3]
