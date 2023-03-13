@@ -3,7 +3,7 @@
 ## How to run:
 You can run the project by using the following command:
 1) cd src
-2) python3 main.py 'X' 'Y' https://raw.githubusercontent.com/Agilefreaks/test_oop/master/coffee_shops.csv
+2) python3 main.py 'X' 'Y' https://url/coffee_shops.csv
 
 ## Overview
 
@@ -22,7 +22,7 @@ Your program will be executed directly from the command line and will be provide
 arguments in the following order:
 `<user x coordinate> <user y coordinate> <shop data url>`
 
-Notice that the data file will be read from an network location (ex: https://raw.githubusercontent.com/Agilefreaks/test_oop/master/coffee_shops.csv)
+Notice that the data file will be read from an network location (ex: https://url/coffee_shops.csv)
 
 ## Output
 
