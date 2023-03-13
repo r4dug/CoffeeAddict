@@ -1,0 +1,2 @@
+response~=0.5.0
+urllib3~=1.26.14
